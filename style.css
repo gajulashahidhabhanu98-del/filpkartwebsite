@@ -1,117 +1,81 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f3f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+   background: #f1f3f6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
 }
- 
-/* Main Box */
-.login-container {
-    display: flex;
-    width: 750px;
-    height: 420px;
-    background: white;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
+.login-box {
+   width: 350px;
+   background: white;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
- 
-/* Left Side */
-.left-box {
-    width: 40%;
-    background-color: #2874f0;
-    color: white;
-    padding: 50px 30px;
+.header {
+   background: #2874f0;
+   padding: 15px;
+   text-align: center;
+   border-radius: 8px 8px 0 0;
 }
- 
-.left-box h2 {
-    font-size: 30px;
+.logo {
+   width: 100px;
 }
- 
-.left-box p {
-    margin-top: 20px;
-    font-size: 14px;
+.content {
+   padding: 20px;
 }
- 
-/* Right Side */
-.right-box {
-    width: 60%;
-    padding: 40px;
+h2 {
+   font-size: 18px;
+   margin-bottom: 5px;
 }
- 
-.right-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 18px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    font-size: 14px;
+p {
+   font-size: 14px;
+   color: gray;
+   margin-bottom: 10px;
 }
- 
-.right-box input:focus {
-    border-color: #2874f0;
+.input-box {
+   display: flex;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   padding: 8px;
+   margin-bottom: 10px;
 }
- 
-/* Terms */
+.input-box span {
+   margin-right: 5px;
+   font-weight: bold;
+}
+.input-box input {
+   border: none;
+   outline: none;
+   width: 100%;
+}
+.email-link {
+   color: #2874f0;
+   font-size: 13px;
+   text-decoration: none;
+   display: block;
+   margin-bottom: 10px;
+}
 .terms {
-    font-size: 12px;
-    color: gray;
+   font-size: 11px;
+   color: gray;
+   margin-bottom: 15px;
 }
- 
-.terms a {
-    color: #2874f0;
-    text-decoration: none;
+.terms span {
+   color: #2874f0;
 }
- 
-/* Buttons */
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #fb641b;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
- 
-button:hover {
-    background-color: #ff4c00;
-}
- 
-/* OR Text */
-.or {
-    text-align: center;
-    margin: 12px 0;
-    color: gray;
-}
- 
-/* OTP Button */
-.otp-btn {
-    background-color: white;
-    color: #2874f0;
-    border: 1px solid #2874f0;
-}
- 
-/* Signup */
-.signup {
-    text-align: center;
-    margin-top: 20px;
-}
- 
-.signup a {
-    color: #2874f0;
-    text-decoration: none;
-    font-weight: bold;
-}
- 
-/* Message */
-#msg {
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
+.btn {
+   width: 100%;
+   background: #fb641b;
+   color: white;
+   border: none;
+   padding: 10px;
+   border-radius: 4px;
+   font-size: 16px;
+   cursor: pointer;
 }
