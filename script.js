@@ -1,17 +1,28 @@
-document.getElementById("loginForm").addEventListener("submit", function(e) {
-    e.preventDefault();
- 
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
-    let msg = document.getElementById("msg");
- 
-    // Dummy login validation
-    if(user === "admin" && pass === "12345") {
-        msg.style.color = "green";
-        msg.innerHTML = "Login Successful ✅";
+const phoneInput = document.getElementById("phone");
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", function () {
+
+    let phone = phoneInput.value.trim();
+
+    if (phone === "") {
+
+        alert("Please enter phone number");
+
+        return;
+
     }
-    else {
-        msg.style.color = "red";
-        msg.innerHTML = "Invalid Username or Password ❌";
+
+    if (phone.length !== 10 || isNaN(phone)) {
+
+        alert("Enter valid 10 digit phone number");
+
+        return;
+
     }
+
+    alert("OTP Sent to +91 " + phone);
+
 });
+ 
